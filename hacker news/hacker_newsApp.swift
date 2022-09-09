@@ -13,7 +13,7 @@ struct hacker_newsApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NewsView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
